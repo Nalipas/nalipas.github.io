@@ -1,19 +1,25 @@
 * {
-    margin: 0 auto;
+    text-align: center;
     font-family: Helvetica, Arial, sans-serif;
 }
 
 header, footer {
-    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
     width: 100%;
     height: 100px;
     color: white;
+    border-bottom: 3px soild black;
     background-color: thistle
 }
 
 header {
     display: block;
-    unicode-bidi: isolate;
+    padding: 40px;
+    margin-bottom: 2%;
+
 }
 
 #self-image {
@@ -21,32 +27,50 @@ header {
     height: 40%;
 }
 
+h1:hover, h2:hover {
+    color: black;
+}
+
 .card {
-    h4 {
-        display:none;
+    h3:hover {
+        color: crimson;
+        cursor: pointer;
     }
-    ul {
-        display:none;
+    h4 {
+        display: none;
+    }
+    .social-media {
+        display: none;
     }
 }
 
 .card:hover {
     h4 {
         display: block;
-        margin: 5%;
+        margin: 2%;
+        cursor: pointer;
     }
-    ul {
-        display:block;
-        a {
-            color: darkslateblue;
-            font-weight: bold;
-            text-decoration: none;
-        }
-        a:hover {
-            color: black;
-            font-weight: bolder;
-            text-decoration: none;
-        }
+    h4:hover {
+        color: goldenrod;
+    }
+    .social-media {
+        display: flex;
+        flex: 0 0 150px;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        img {
+            min-width: 100px;
+            max-width: 150px;
         }
     }
+}
+
+footer {
+    bottom: 0;
+    padding: 20px;
+    text-align: center;
+    display: block;
+    position: absolute;
+    margin-top: auto;
 }
