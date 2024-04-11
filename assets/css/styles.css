@@ -364,17 +364,11 @@ footer {
     * {
         scroll-margin-top: 400px; 
     }
-    body {
-        line-height: 2vb;
-    }
 }
 
 @media screen and (min-width: 1440px) {
     * {
         scroll-margin-top: 200px; 
-    }
-    body {
-        line-height: 2vb;
     }
 }
 
@@ -384,7 +378,6 @@ footer {
         align-items: center;
         flex-direction: column;
         justify-content: center;
-        line-height: 2vb;
         flex: 1 1 auto;
         width: auto;
     }
@@ -404,7 +397,6 @@ footer {
         justify-content: center;
         flex: 1 1 auto;
         width: auto;
-        line-height: 2vb;
     }
     .card-recent-work {
         .recent-work {
