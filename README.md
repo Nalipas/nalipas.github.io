@@ -32,9 +32,6 @@ Published website written by [smoreno2014\@gmail.com](mailto:smoreno2014@gmail.c
 
 ## Version History
 
-* 0.2
-    * Various bug fixes and optimizations
-    * See [commit change]() or See [release history]()
 * 0.1
     * Initial Release
 
@@ -44,12 +41,15 @@ This project is licensed under the MIT License - see the LICENSE.md file for det
 
 ## Acknowledgments
 
-Code reviewed by [Chad Manuel](https://github.com/chdclar16) before submission. 
+With extra help and review from [Chad Manuel](https://github.com/chdclar16) before submission. 
 
-Thank you for your help!
+Thank you for your help and support!
+
+
 Inspiration, code snippets, etc.
-* [awesome-readme](https://github.com/matiassingers/awesome-readme)
-* [PurpleBooth](https://gist.github.com/PurpleBooth/109311bb0361f32d87a2)
-* [dbader](https://github.com/dbader/readme-template)
-* [zenorocha](https://gist.github.com/zenorocha/4526327)
-* [fvcproductions](https://gist.github.com/fvcproductions/1bfc2d4aecb01a834b46)
+* [README.md Template](https://github.com/matiassingers/awesome-readme)
+* [Markdown Guide](https://www.markdownguide.org/basic-syntax/)
+* [Coding Help](https://stackoverflow.com)
+* [CSS Styling Help](https://www.w3schools.com/howto/howto_css_zoom_hover.asp)
+* [More CSS Styling Help](https://codepen.io/mcraig218/pen/MWOPgr)
+* [Even More CSS Styling Help](https://codepen.io/gomezisdan/pen/bEWdma)
