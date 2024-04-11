@@ -32,7 +32,7 @@ Published website written by [smoreno2014\@gmail.com](mailto:smoreno2014@gmail.c
 
 ## Version History
 
-* <a href-"https://github.com/Nalipas/nalipas.github.io/releases/tag/v0.1">v0.1</a>
+* <a href="https://github.com/Nalipas/nalipas.github.io/releases/tag/v0.1">v0.1</a>
     * Initial Release
 
 ## License
