@@ -332,8 +332,6 @@ h3 {
     text-decoration: line-through;
 }
 
-
-
 footer {
     display: block;
     position: sticky;
@@ -356,6 +354,18 @@ footer {
             margin: 20%;
             padding: 20%;
         }
+    }
+}
+
+@media screen and (min-width: 2560px) {
+    * {
+        scroll-margin-top: 400px; 
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    * {
+        scroll-margin-top: 200px; 
     }
 }
 
