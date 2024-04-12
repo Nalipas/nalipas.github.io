@@ -4,7 +4,9 @@ A simple build of my personal portfolio site, as hosted on github.io.
 
 ## Description
 
-In this repository you will find the source code, reference links, and related documents used to create my personal portfolio. This webpage is a work in progress, and will go through verious changes over time. With this initial release, only HTML and CSS are used to create the page.
+In this repository you will find the source code, reference links, and related documents used to create my personal portfolio. On the site, you will find navigation links to different sections of the page. Included in the "Past Projects" section are several placeholders for future projects.
+
+This webpage is a work in progress, and will go through various changes over time. With this initial release, only HTML and CSS are used to create the page.
 
 ## Getting Started
 
