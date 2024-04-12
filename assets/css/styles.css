@@ -109,8 +109,8 @@ body {
 h3 {
     font-size: 28px;
     font-weight: bolder;
-    color: var(--dark)
-    letter-spacing: 3px;
+    color: var(--dark);
+    letter-spacing: 2px;
     -webkit-text-stroke-width: 2px;
     -webkit-text-stroke-color: var(--light);
 }
@@ -394,7 +394,6 @@ footer {
         flex: 1 1 auto;
         width: auto;
     }
-    .card-recent-work {
     .recent-work {
         max-width: 290px;
         max-height: 300px;
