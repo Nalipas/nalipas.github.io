@@ -2,8 +2,11 @@
     --dark: #222222;
     --light: #fff0f5;
     --favorite: #f2d0ff;
-    --hf: #ffc8db;
+    --hf: #ffd3e2;
     --hoverbg: #ff545c;
+    --sky: #ffbb8a;
+    --favdark: #d1afde;
+    --card-border: 15px;
 }
 
 * {
@@ -24,11 +27,10 @@ body {
     font-size: 18px;
     font-weight: 450;
     line-height: 3vb;
-    background: var(--favorite);
-    background: -webkit-linear-gradient(left top, var(--favorite), var(--hf));
-    background: -o-linear-gradient(bottom right, var(--favorite), var(--hf));
-    background: -moz-linear-gradient(bottom right, var(--favorite), var(--hf));
-    background: linear-gradient(to bottom right, var(--favorite), var(--hf));
+    background: -webkit-linear-gradient(left top, var(--sky), var(--favdark));
+    background: -o-linear-gradient(bottom right, var(--sky), var(--favdark));
+    background: -moz-linear-gradient(bottom right, var(--sky), var(--favdark));
+    background: linear-gradient(to bottom right, var(--sky), var(--favdark));
 }
 
 .hero-image {
@@ -103,8 +105,12 @@ body {
 }
 
 h3 {
-    font-size: larger;
+    font-size: 28px;
+    font-weight: bolder;
+    color: var(--dark)
     letter-spacing: 3px;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: var(--light);
 }
 
 .card-about {
@@ -115,7 +121,7 @@ h3 {
     margin-right: 20px;
     margin-left: 20px;
     align-items: left;
-    border: solid var(--light) 20px;
+    border: solid var(--light) var(--card-border);
     border-radius: 40px;
     padding: 25px;
     min-height: 350px;
@@ -147,7 +153,7 @@ h3 {
     justify-content: space-evenly;
     margin: 20px;
     align-items: flex-start;
-    border: solid var(--light) 20px;
+    border: solid var(--light) var(--card-border);
     border-radius: 40px;
     padding: 25px;
     min-height: auto;
@@ -212,7 +218,7 @@ h3 {
     z-index: 997;
     margin: 20px;
     align-items: flex-start;
-    border: solid var(--light) 20px;
+    border: solid var(--light) var(--card-border);
     border-radius: 40px;
     padding: 25px;
     min-height: auto;
@@ -271,13 +277,16 @@ h3 {
     margin-right: 20px;
     margin-left: 20px;
     align-items: left;
-    border: solid var(--light) 20px;
+    border: solid var(--light) var(--card-border);
     border-radius: 40px;
     padding: 25px;
     min-height: 350px;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: var(--dark);
     color: var(--light);
+    h3 {
+        color: var(--dark);
+    }
 }
 
 .mastrena {
@@ -328,12 +337,13 @@ h3 {
 
 footer {
     display: block;
+    font-size: small;
     position: sticky;
     bottom: 0;
     z-index: 999;
     border-top: 2px solid var(--dark);
     background-color: var(--hf);
-    height: 135px;
+    height: 145px;
     p {
         text-align: center;
     }
@@ -346,8 +356,8 @@ footer {
     li {
         list-style-type: none;
         img {
-            max-width: 60px;
-            padding: 20%;
+            max-width: 75px;
+            border: solid transparent 15px;
         }
     }
 }
@@ -365,6 +375,13 @@ footer {
 }
 
 @media screen and (max-width: 992px) {
+    * {
+        max-width: 100%;
+        scroll-margin-top: 220px;
+    }
+    .hero-text {
+        top: 20%;
+    }
     .card-about, .card-projects {
         display: flex;
         align-items: center;
@@ -382,6 +399,16 @@ footer {
 }
 
 @media screen and (max-width: 768px) {
+    * {
+        scroll-margin-top: 330px;
+    }
+    #top ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    .hero-text {
+        top: 25%;
+    }
     .card-about, .card-projects, #self-image {
         display: flex;
         align-items: center;
