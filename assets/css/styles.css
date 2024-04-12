@@ -1,12 +1,14 @@
 :root {
     --dark: #222222;
     --light: #fff0f5;
-    --favorite: #f2d0ff;
-    --hf: #ffd3e2;
-    --hoverbg: #ff545c;
+    --favorite: #aa8fb5;
+    --hf: #ffdae2;
+    --hoverbg: #eb4e56;
     --sky: #ffbb8a;
     --favdark: #d1afde;
     --card-border: 15px;
+    --card-border-radius: 40px;
+    --tile-border: 35px;
 }
 
 * {
@@ -122,7 +124,7 @@ h3 {
     margin-left: 20px;
     align-items: left;
     border: solid var(--light) var(--card-border);
-    border-radius: 40px;
+    border-radius: var(--card-border-radius);
     padding: 25px;
     min-height: 350px;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -135,7 +137,7 @@ h3 {
         max-width: 225px;
         flex: 0 0 200px;
         border: solid var(--light);
-        border-radius: 25px;
+        border-radius: var(--tile-border);
     }
     p {
         text-align: left;
@@ -154,7 +156,7 @@ h3 {
     margin: 20px;
     align-items: flex-start;
     border: solid var(--light) var(--card-border);
-    border-radius: 40px;
+    border-radius: var(--card-border-radius);
     padding: 25px;
     min-height: auto;
     max-width: 100%;
@@ -163,7 +165,7 @@ h3 {
     background-color: var(--dark);
     .recent-work {
         border: solid var(--light) 3px;
-        border-radius: 40px;
+        border-radius: var(--tile-border);
         background-color: var(--favorite);
         padding: 10px;
         margin: auto;
@@ -174,7 +176,7 @@ h3 {
             width: 500px;
             margin: 10px;
             border: solid transparent 5px;
-            border-radius: 40px;
+            border-radius: var(--tile-border);
             opacity: 1;
             transition: 2s;
             overflow: clip;
@@ -219,7 +221,7 @@ h3 {
     margin: 20px;
     align-items: flex-start;
     border: solid var(--light) var(--card-border);
-    border-radius: 40px;
+    border-radius: var(--card-border-radius);
     padding: 25px;
     min-height: auto;
     max-width: 100%;
@@ -228,7 +230,7 @@ h3 {
     .container {
         margin: 20px;
         border: solid var(--light) 3px;
-        border-radius: 40px;
+        border-radius: var(--tile-border);
         padding: 25px;
         background-color: var(--favorite);
         img {
@@ -236,7 +238,7 @@ h3 {
             align-items: center;
             max-width: 200px;
             border: solid transparent 5px;
-            border-radius: 25px;
+            border-radius: var(--tile-border);
         }
         .app-name {
             color: white;
@@ -278,7 +280,7 @@ h3 {
     margin-left: 20px;
     align-items: left;
     border: solid var(--light) var(--card-border);
-    border-radius: 40px;
+    border-radius: var(--card-border-radius);
     padding: 25px;
     min-height: 350px;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -301,6 +303,7 @@ h3 {
     background-color: black;
     color: #fff;
     text-align: center;
+    border: solid white 2px;
     border-radius: 6px;
     padding: 5px 0;
     position: absolute;
@@ -322,6 +325,7 @@ h3 {
     background-color: black;
     color: #fff;
     text-align: center;
+    border: solid white 2px;
     border-radius: 6px;
     padding: 5px 0;
     position: absolute;
@@ -389,6 +393,17 @@ footer {
         justify-content: center;
         flex: 1 1 auto;
         width: auto;
+    }
+    .card-recent-work {
+    .recent-work {
+        max-width: 290px;
+        max-height: 300px;
+    }
+    img {
+        display: flex;
+        align-items: center;
+        max-width: 250px;
+        max-height: 270px;
     }
     .card-recent-work .app-name p {
         font-size: 60%;
